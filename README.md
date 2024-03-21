@@ -2,7 +2,7 @@
 
 ## 정의
 
-#### 객체지향프로그래밍(Object-OPriented Programming)
+#### 객체지향프로그래밍(Object-Oriented Programming)
 컴퓨터 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 <br>
 여러 독립된 단위의 객체들의 상호작용으로 구성하는 프로그래밍 패러다임
 
