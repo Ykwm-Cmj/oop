@@ -18,7 +18,7 @@ public class Application {
     }
 
     public void buttonClick(){
-        button.paint();;
+        button.paint();
     }
 
     public void checkBoxClick(){
@@ -26,14 +26,6 @@ public class Application {
     }
 
     public static Application getInstance() {
-        String os = System.getProperty("os.name").toUpperCase();
-
-        GUIFactory factory = switch (os){
-            case  "WIN" -> new WinFactory();
-            case "MAC" -> new MacFactory();
-            default -> throw new RuntimeException("No Declare OS");
-        };
-
-        return new Application(factory);
+        return new Application(GUIFactory.getFactory());
     }
 }
