@@ -31,7 +31,7 @@ public class Application {
         GUIFactory factory = switch (os){
             case  "WIN" -> new WinFactory();
             case "MAC" -> new MacFactory();
-            default -> new WinFactory();
+            default -> throw new RuntimeException("No Declare OS");
         };
 
         return new Application(factory);
