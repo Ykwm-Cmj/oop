@@ -9,4 +9,8 @@ public interface CarBuilder3 {
     CarBuilder3 setTransmissionType(String transmissionType);
     CarBuilder3 setNavigationSystem(boolean hasNavigationSystem);
     Car3 build();
+
+//    default Car3 createSuv() {
+//        return this.set~~;
+//    }
 }
