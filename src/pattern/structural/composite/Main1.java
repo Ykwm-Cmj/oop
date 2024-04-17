@@ -31,7 +31,10 @@ public class Main1 {
         battalion.addSubUnit(company2);
 
         platoon1.removeSubUnit(soldier1);
-        //battalion.removeSubUnit(soldier1); 삭제 안됨
+        //battalion.removeSubUnit(soldier1);
+        // 삭제 안됨 battalion 메모리 안에는 중대만 들어있음
+        // -> 리스트 타고 타고 들어가면 되긴할듯
+
         // 중앙 통제
         battalion.executeOrders();
     }
