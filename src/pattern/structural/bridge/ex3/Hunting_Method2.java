@@ -1,4 +1,4 @@
-package pattern.structural.composite.ex3;
+package pattern.structural.bridge.ex3;
 
 public class Hunting_Method2 implements Hunting_Handler {
     public void Find_Quarry() {

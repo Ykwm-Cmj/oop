@@ -1,4 +1,4 @@
-package pattern.structural.composite.onlyInterfaceEx2;
+package pattern.structural.bridge.onlyInterfaceEx2;
 
 public class Main2 {
     public static void main(String[] args) {

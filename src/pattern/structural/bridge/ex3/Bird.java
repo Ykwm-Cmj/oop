@@ -1,6 +1,6 @@
-package pattern.structural.composite.ex3;
+package pattern.structural.bridge.ex3;
 
-public class Bird extends Animal{
+public class Bird extends Animal {
     public Bird(Hunting_Handler hunting) {
         super(hunting);
     }

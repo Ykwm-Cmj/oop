@@ -1,4 +1,4 @@
-package pattern.structural.composite.ex3;
+package pattern.structural.bridge.ex3;
 
 public class Main {
     public static void main(String[] args) {

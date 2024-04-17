@@ -1,4 +1,4 @@
-package pattern.structural.composite.onlyInterfaceEx2;
+package pattern.structural.bridge.onlyInterfaceEx2;
 
 public class AdvancedRemote implements Remote {
     private AdvancedTV tv;

@@ -1,4 +1,4 @@
-package pattern.structural.composite.ex1;
+package pattern.structural.bridge.ex1;
 
 abstract class Shape {
     protected Color color;

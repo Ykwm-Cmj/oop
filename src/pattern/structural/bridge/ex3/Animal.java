@@ -1,4 +1,4 @@
-package pattern.structural.composite.ex3;
+package pattern.structural.bridge.ex3;
 
 public class Animal {
     private Hunting_Handler hunting;
