@@ -18,6 +18,7 @@ public class MilitaryComposite implements MilitaryUnit {
 
     public void removeSubUnit(MilitaryUnit unit) {
         subUnits.remove(unit);
+        System.out.println("퇴출명령을 받들겠습니다!");
     }
 
     public void executeOrders() {

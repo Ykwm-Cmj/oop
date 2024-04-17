@@ -30,6 +30,8 @@ public class Main1 {
         battalion.addSubUnit(company1);
         battalion.addSubUnit(company2);
 
+        platoon1.removeSubUnit(soldier1);
+        //battalion.removeSubUnit(soldier1); 삭제 안됨
         // 중앙 통제
         battalion.executeOrders();
     }
