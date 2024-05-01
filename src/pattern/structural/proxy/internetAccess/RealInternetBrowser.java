@@ -1,6 +1,13 @@
 package pattern.structural.proxy.internetAccess;
 
 public class RealInternetBrowser implements InternetBrowser {
+
+    private String browserNm;
+
+    public RealInternetBrowser(String browserNm) {
+        this.browserNm = browserNm;
+    }
+
     @Override
     public void browse(String url) {
         System.out.println("Accessing website: " + url);

@@ -7,7 +7,7 @@ public class Terrain3 {
     // 지형 타일 크기
     static final int CANVAS_SIZE = 10000;
 
-    // 나무를 렌더릴
+    // 나무를 렌더링
     public void render(String type, double position_x, double position_y) {
         // 1. 캐시 되어 있는 나무 모델 객체 가져오기
         TreeModel3 model = TreeModelFactory3.getInstance(type);

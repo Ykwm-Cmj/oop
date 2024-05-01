@@ -22,6 +22,6 @@ final class Tree3 {
         this.position_y = position_y;
 
         // 나무 객체를 생성하였으니 메모리 사용 크기 증가
-        Memory3.size +=  this.objSize;
+       // Memory3.size +=  this.objSize;
     }
 }

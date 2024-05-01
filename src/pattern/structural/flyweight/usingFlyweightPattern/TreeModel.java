@@ -20,6 +20,6 @@ public class TreeModel {
         this.texture = texture;
 
         // 나무 객체를 생성하여 메모리에 적재했으니 메모리 사용 크기 증가
-        Memory2.size += this.objSize;
+        //Memory2.size += this.objSize;
     }
 }

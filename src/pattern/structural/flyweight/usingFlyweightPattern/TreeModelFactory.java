@@ -27,6 +27,8 @@ public class TreeModelFactory {
                     new Object(),
                     new Object()
             );
+
+            Memory2.size +=  model.objSize;
             System.out.println("-- 나무 모델 객체 새로 생성 완료 --");
 
             // 캐시에 적재

@@ -10,13 +10,15 @@ package pattern.structural.proxy.internetAccess;
 public class BrowserProxy implements InternetBrowser {
     private InternetBrowser realBrowser;
 
+    public BrowserProxy(InternetBrowser realBrowser) {
+        this.realBrowser = realBrowser;
+    }
+
     @Override
     public void browse(String url) {
         if (isValidSite(url)) {
             // 유효한 웹 사이트인 경우에만 실제 인터넷 브라우저를 생성하여 웹 페이지에 접속
-            if (realBrowser == null) {
-                realBrowser = new RealInternetBrowser();
-            }
+            // 받은 브라우저 가지고 캐싱을 하던 뭘하던~
             realBrowser.browse(url);
         } else {
             System.out.println("접근할 수 없는 사이트입니다.");
