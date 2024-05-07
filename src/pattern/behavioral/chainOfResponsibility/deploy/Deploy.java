@@ -8,7 +8,6 @@ public class Deploy {
     }
 
     public void deploy(){
-        handler.doWork();
-        System.out.println("배포 완료");
+        System.out.println("배포" + (handler.doWork() ? "완료" : "실패"));
     }
 }

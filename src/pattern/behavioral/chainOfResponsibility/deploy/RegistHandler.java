@@ -2,8 +2,15 @@ package pattern.behavioral.chainOfResponsibility.deploy;
 
 public class RegistHandler extends DeployWorkHandler {
     @Override
-    void doWork() {
+    boolean doWork() {
         System.out.println("배포 등록");
-        doWorkNext();
+        return doWorkNext();
     }
+
+    @Override
+    boolean check() {
+        return true;
+    }
+
+
 }

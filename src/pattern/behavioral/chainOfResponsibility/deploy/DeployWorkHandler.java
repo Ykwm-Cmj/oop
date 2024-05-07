@@ -3,12 +3,14 @@ package pattern.behavioral.chainOfResponsibility.deploy;
 public abstract class DeployWorkHandler {
     private DeployWorkHandler next;
 
-    abstract void doWork();
+    abstract boolean doWork();
 
-    protected void doWorkNext(){
-        if(next != null){
-            next.doWork();
-        }
+    abstract boolean check();
+
+    protected boolean doWorkNext(){
+        if(next == null) return true;
+        return next.doWork();
+
     }
     public DeployWorkHandler setNext(DeployWorkHandler next){
         this.next = next;
