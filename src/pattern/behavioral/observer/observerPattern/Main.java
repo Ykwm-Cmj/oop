@@ -24,6 +24,9 @@ public class Main {
         // 고객이 너무 진상이라 도중에 알림 보내지 않으려고 옵저버 제외 및 블랙리스트 추가
         store.removeObserver(customer2);
 
+        // 변경사항 모든 옵저버에 적용
+        store.notifyObservers("내용이 변경되었어요~~");
+        
         // 다시 알림 발송
         store.releaseNewProduct("Tablet");
     }
