@@ -2,6 +2,7 @@ package pattern.behavioral.observer.observerPattern;
 
 public class Main {
     public static void main(String[] args) {
+
         // 가게 생성
         Store store = new Store();
 
