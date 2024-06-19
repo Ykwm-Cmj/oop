@@ -14,7 +14,6 @@ public class Main1 {
 
         // 인터페이스클래스 변수에 구현체를 담아서 확장성을 챙긴다.
         ToyVisitor statusChecker = new ToyStatusCheckerVisitor();
-
         // 방문자 방문 허가
         for (Toy toy : toys) {
             toy.accept(statusChecker);
